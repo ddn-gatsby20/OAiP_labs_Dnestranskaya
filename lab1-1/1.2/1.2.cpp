@@ -1,36 +1,37 @@
 /* Днестранская Дарья Сергеевна
-Лабороторная работа №1
+Лабораторная работа №1
 Вариант №1
 Задание: Перевести версты в сажени и сантиметры
 */
 
+#define _CRT_SECURE_NO_WARNINGS 
+#define sajeni 500
+#define centimeters 106.680
 
 #include<stdio.h>
 #include<locale.h>
 #include<conio.h>
 
-    #define sajeni=500;
-    #define sm = 106.680;
+
 int main()
 {
-   
-	float a, b, c;
-    
+	setlocale(LC_ALL, "Rus");
+
+	float verst, vsajeni = 0, vcentimeters = 0;
 	printf("Введите меру в верстах   ");
-	int result = scanf_s("%f", &a);
-	setlocale(LC_ALL, "Russian");
-	
-	if (result==0)
+	int result = scanf("%f", &verst);
+	if (result == 0)
 	{
-		printf("Error message");
+		printf("Некорректный ввод данных");
 	}
 	else
 	{
-		b = a * 500;
-		c = a * 106.680;
+		vsajeni = verst * sajeni;
+		vcentimeters = verst * centimeters;
+
+		printf("\n Мера в саженях %f ", vsajeni);
+		printf("\n Мера в сантиметрах %f \n  ", vcentimeters);
 	}
-	printf("\n Мера в саженях %f ", b);
-	printf("\n Мера в сантиметрах %f \n  ", c);
 
 	_getch();
 	return 0;
