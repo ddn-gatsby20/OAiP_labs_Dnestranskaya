@@ -1,0 +1,4 @@
+﻿  lab2-10.cpp
+c:\users\daria dnestranskaya\documents\visual studio 2015\projects\lab2-10\lab2-10\lab2-10.cpp(38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  lab2-10.vcxproj -> C:\Users\Daria Dnestranskaya\Documents\Visual Studio 2015\Projects\lab2-10\Debug\lab2-10.exe
+  lab2-10.vcxproj -> C:\Users\Daria Dnestranskaya\Documents\Visual Studio 2015\Projects\lab2-10\Debug\lab2-10.pdb (Partial PDB)
