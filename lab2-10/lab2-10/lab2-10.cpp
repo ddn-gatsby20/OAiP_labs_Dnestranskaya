@@ -8,11 +8,17 @@
 #include<conio.h>
 #include<locale>
 
+int readValue()
+{
+	int value;
+	
+}
+
 int main()
 {
 	setlocale(LC_ALL, "Rus");
 	int array[30], arraylength, i, evens = 0, sum = 0;
-    float average=0;
+	float average=0;
 	
 	printf_s("Enter array length ");
 	scanf_s("%d\n", &arraylength);
