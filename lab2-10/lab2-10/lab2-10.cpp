@@ -8,11 +8,6 @@
 #include<conio.h>
 #include<locale>
 
-int readValue()
-{
-	int value;
-	
-}
 
 int main()
 {
