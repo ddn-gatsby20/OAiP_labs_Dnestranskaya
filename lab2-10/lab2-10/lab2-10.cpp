@@ -1,20 +1,19 @@
 ﻿/*
- Днестранская Дарья Сергеевна
- Лабороторная работа №1
- Вариант 10
- Задание:вычислить арифметическое чётных чисел массива
+Днестранская Дарья Сергеевна
+Лабороторная работа №2
+Вариант 10
+Задание:вычислить арифметическое чётных чисел массива
 */
 #include<stdio.h>
 #include<conio.h>
 #include<locale>
 
-
 int main()
 {
 	setlocale(LC_ALL, "Rus");
 	int array[30], arraylength, i, evens = 0, sum = 0;
-	float average=0;
-	
+	float average = 0;
+
 	printf_s("Enter array length ");
 	scanf_s("%d\n", &arraylength);
 	for (i = 0; i < arraylength; i++)
@@ -24,9 +23,10 @@ int main()
 		if (result == 0)
 		{
 			printf("Error");
+			_getch();
 			return 0;
 		}
-	
+
 		else
 		{
 
@@ -43,3 +43,4 @@ int main()
 	_getch();
 	return 0;
 }
+
